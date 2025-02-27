@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Accademiche</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .gif-wrapper {
+            display: flex;
+            justify-content: center; /* Centra le GIF */
+            gap: 20px; /* Spazio tra le GIF */
+            flex-wrap: wrap; /* Se lo schermo è piccolo, vanno a capo */
+            margin-bottom: 20px; /* Spazio tra le righe */
+        }
+        .gif-container {
+            text-align: center; /* Centra la didascalia */
+        }
+        img {
+            width: 250px; /* Modifica la dimensione se necessario */
+            border-radius: 10px;
+        }
+        .caption {
+            margin-top: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>U87mg Luc+ spheroids</h1>
+    <p style="font-size: 16px; color: gray;">Each image sequence was obtained capturing 15 consecutive frames, with exposure time of 10 s each.</p>
+
+
+    <!-- Prima riga -->
+    <div class="gif-wrapper">
+        <div class="gif-container">
+            <img src="ctrl_1_24h_2_10s.gif" alt="GIF 1">
+            <div class="caption">CTRL 24 hours post RT</div>
+        </div>
+        <div class="gif-container">
+            <img src="10gy_1_24h_2_10s.gif" alt="GIF 2">
+            <div class="caption">10 Gy 24 hours post RT</div>
+        </div>
+        <div class="gif-container">
+            <img src="20gy_24h_6_10s.gif" alt="GIF 3">
+            <div class="caption">20 Gy 24 hours post RT</div>
+        </div>
+    </div>
+
+    <!-- Seconda riga -->
+    <div class="gif-wrapper">
+        <div class="gif-container">
+            <img src="ctrl_1_d4_7_10s.gif" alt="GIF 4">
+            <div class="caption">CTRL 4 days post RT</div>
+        </div>
+        <div class="gif-container">
+            <img src="10gy_2_d4_4_10s.gif" alt="GIF 5">
+            <div class="caption">10 Gy 4 days post RT</div>
+        </div>
+        <div class="gif-container">
+            <img src="20gy_4d_4_10s.gif" alt="GIF 6">
+            <div class="caption">20 Gy 4 days post RT</div>
+        </div>
+    </div>
+
+    <!-- Terza riga -->
+    <div class="gif-wrapper">
+        <div class="gif-container">
+            <img src="ctrl_2_d8_3_10s.gif" alt="GIF 7">
+            <div class="caption">CTRL 8 days post RT</div>
+        </div>
+        <div class="gif-container">
+            <img src="10gy_d8_5_10s.gif" alt="GIF 8">
+            <div class="caption">10 Gy 8 days post RT</div>
+        </div>
+        <div class="gif-container">
+            <img src="20gy_d8_1_10s.gif" alt="GIF 9">
+            <div class="caption">20 Gy 8 days post RT</div>
+        </div>
+    </div>
+
+</body>
+</html>
